@@ -40,7 +40,6 @@ export default class demoa extends Component {
         count++;
         store.dispatch(actionType.addThunk({ count }));
         this.setState((prevState, props) => {
-            console.log(prevState, props);
             return {
                 num: prevState.num+1
             }

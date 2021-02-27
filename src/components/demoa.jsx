@@ -6,6 +6,7 @@ import actionType from '../components/demoa/actionType';
 
 const A = lazy(() => import('./erziA'));
 const B = lazy(() => import('./erziB'));
+
 export default class demoa extends Component {
     constructor() {
         super();

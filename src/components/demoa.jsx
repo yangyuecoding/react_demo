@@ -45,7 +45,6 @@ export default class demoa extends Component {
             }
         })
         this.setState((prevState, props) => {
-            console.log(prevState, props);
             return {
                 num: prevState.num+1
             }

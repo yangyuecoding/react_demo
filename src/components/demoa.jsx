@@ -36,7 +36,6 @@ export default class demoa extends Component {
     }
     add() {
       setTimeout(() => {
-        console.log(1)
         let count = this.state.count;
         count++;
         store.dispatch(actionType.addThunk({ count }));
@@ -46,11 +45,10 @@ export default class demoa extends Component {
             }
         })
         this.setState((prevState, props) => {
-            return {
+            return { 
                 num: prevState.num+1
             }
         })
-        console.log(3);
       })
     }
     render() {

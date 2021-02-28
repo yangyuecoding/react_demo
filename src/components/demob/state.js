@@ -1,0 +1,28 @@
+export const data = {
+    list:[
+        {
+            name:'张三1',
+            age:18,
+            sex:'男',
+            actived:false
+        },
+        {
+            name:'张三2',
+            age:18,
+            sex:'男',
+            actived:false
+        },
+        {
+            name:'张三3',
+            age:18,
+            sex:'男',
+            actived:false
+        },
+        {
+            name:'张三4',
+            age:18,
+            sex:'男',
+            actived:false
+        },
+    ]
+}

@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import store from '../store/index';
 import actionType from '../components/demoa/actionType';
+import logo from '../static/微信图片_20190823171319.jpg';
 
 const A = lazy(() => import('./erziA'));
 const B = lazy(() => import('./erziB'));
@@ -58,7 +59,8 @@ export default class demoa extends Component {
                 <h2>demoa页面</h2>
                 <Button type='primary' onClick={() => { this.props.history.push({ pathname: '/demoa/erzia' }) }}>返回首页A</Button>
                 <Button type='primary' onClick={() => { this.props.history.push({ pathname: '/demoa/erzib', query: { id: 1002 } }) }}>返回首页b</Button>
-                <Suspense fallback={<div>loading...</div>}>
+                {/* <Suspense fallback={<div>loading...</div>}> */}
+                <Suspense fallback={<img src={logo} alt='hello'></img>}>
                     <Switch>
                         <Route path='/demoa/erzia' component={A}></Route>
                         <Route path='/demoa/erzib' component={B}></Route>

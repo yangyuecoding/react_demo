@@ -3,6 +3,7 @@ import React , {lazy,Suspense} from 'react';
 import loading from '../components/loading';
 const Demoa = lazy( () => import(/* webpackChunkName:'demoa_page' */ '../components/demoa') );
 const Demob = lazy( () => import(/* webpackChunkName:'demob_page' */ '../components/demob') );
+const Democ = lazy( () => import(/* webpackChunkName:'democ_page' */ '../components/democ') );
 const Index = lazy( () => import(/* webpackChunkName:'index_page' */ '../view/index') );
 export default class Router extends React.Component {
     render(){
@@ -14,6 +15,7 @@ export default class Router extends React.Component {
               <Switch>
                     <Route path="/demoa" component={Demoa}></Route>
                     <Route path="/demob" component={Demob}></Route>
+                    <Route path="/democ" component={Democ}></Route>
                     <Route path="/index" component={Index}></Route>
                     <Redirect from='/' to='/index' exact></Redirect>
                 </Switch>

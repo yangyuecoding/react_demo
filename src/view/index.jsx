@@ -7,6 +7,7 @@ export default class index extends Component {
                 <h1>我是首页</h1>
                 <Button type='primary' onClick={ () => { this.props.history.push( { pathname:'/demoa',query:{id:1001} } ) } }>前往demoa</Button>
                 <Button type='primary' onClick={ () => { this.props.history.push( { pathname:'/demob',state:{id:1001} } ) } }>前往demob</Button>
+                <Button type='primary' onClick={ () => { this.props.history.push( { pathname:'/democ',serach:'name=zhangsna' } ) } }>前往democ</Button>
             </div>
         )
     }
